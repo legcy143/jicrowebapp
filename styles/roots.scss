@@ -1,0 +1,21 @@
+
+:root{
+    // --theme
+    --theme-bg : rgb(235, 235, 235);
+    --theme-color: rgb(36, 36, 36);
+
+    // primary - sccondry
+    --primary-color:rgb(104, 77, 233);
+    --primary-color-rgb:104, 77, 233;
+
+    // colors
+    --white: white;
+    --black : black;
+}
+// @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
+    :root{
+        --theme-bg : rgb(28, 28, 28);
+        --theme-color: rgb(225, 225, 225);
+      }
+  }
