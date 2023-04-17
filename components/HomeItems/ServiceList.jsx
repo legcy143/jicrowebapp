@@ -1,9 +1,12 @@
 import React from 'react'
 import style from "./servicelist.module.scss"
 import AddIcon from '@mui/icons-material/Add';
+import { useRouter } from 'next/router';
+import URL from '@/constants/URL';
 
 
 const ServiceList = () => {
+  let router = useRouter()
   return (
     <main className={style.container}>
       <Card />
@@ -14,7 +17,7 @@ const ServiceList = () => {
       <Card />
       <Card />
       <Card />
-      <div className={`${style.card} ${style.postService}`}>
+      <div className={`${style.card} ${style.postService}`} onClick={()=>{router.push(URL.DEMANDSERVICE)}}>
         <AddIcon/>
        <span>demand service</span>
   </div>

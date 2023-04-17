@@ -1,0 +1,31 @@
+@import "../../styles/mixins";
+
+.navMain{
+    padding: 0.5rem 1rem;
+    position: sticky;
+    top: 0%;
+    width: 100vw;
+    background-color: var(--theme-container);
+    box-shadow: 01x 1px 11px 0px var(--theme-shadow);
+    @include flexBox(row , space-between);
+    z-index: 10;
+    button{
+        @include primaryButton();
+        padding: 0.4rem 1rem;
+        background: rgba(86, 86, 86, 0.2);
+        border-radius: 11rem;
+        svg{
+            width: 1.1rem;
+        }
+        &:hover{
+            background: rgba(86, 86, 86, 0.4);
+        }
+    }
+    h2{
+        font-size: 1rem;
+    }
+    h1{
+        font-size: 1.5rem;
+        text-transform: capitalize;
+    }
+}
