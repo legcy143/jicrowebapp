@@ -1,12 +1,20 @@
 import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Homenav from '@/components/navbar/Homenav'
+import Crausal from '@/components/HomeItems/Crausal'
+import ServiceList from '@/components/HomeItems/ServiceList'
+import style from "./styles/home.module.scss"
+import TrendingService from '@/components/HomeItems/TrendingService'
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
     <main>
-      <h1>hello world</h1>
+      <Homenav/>
+      <section className='primarylayout' style={{margin:"2rem auto"}}>
+      <Crausal/>
+      <ServiceList />
+      <TrendingService/>
+      </section>
     </main>
   )
 }

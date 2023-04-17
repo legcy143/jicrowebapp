@@ -11,18 +11,18 @@
     gap: $gap;
 }
 
-@mixin gridwrap($width:200px){
+@mixin gridWrap($width:200px){
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax($width , 1fr));
 }
 
-@mixin textgrad($from:to bottom , $bg1:rgb(253, 255, 254) , $bg2:rgb(106, 107, 107)){
+@mixin textGrad($from:to bottom , $bg1:rgb(253, 255, 254) , $bg2:rgb(106, 107, 107)){
     background:linear-gradient($from ,$bg1, $bg2) ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 0.1px rgba(224, 224, 224, 0.2);
   }
-@mixin textwrap($line:1){
+@mixin textWrap($line:1){
     word-break: break-all;
     display: -webkit-box;
     -webkit-line-clamp: $line;
@@ -44,7 +44,7 @@
     color: $color;
   }
 
-  @mixin scrollbar($width:5px , $height:5px){
+  @mixin scrollBar($width:5px , $height:5px){
     &::-webkit-scrollbar{
         overflow: hidden;
         width: $width;

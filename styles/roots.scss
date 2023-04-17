@@ -2,11 +2,16 @@
 :root{
     // --theme
     --theme-bg : rgb(235, 235, 235);
+    --theme-container : rgb(214, 214, 214);
+    --theme-shadow: rgba(0, 0, 0);
+    --theme-shadow-rgb: 0, 0, 0;
     --theme-color: rgb(36, 36, 36);
 
     // primary - sccondry
     --primary-color:rgb(104, 77, 233);
     --primary-color-rgb:104, 77, 233;
+    --secondry-color:rgb(127, 12, 250);
+    --secondry-color-rgb:127, 12, 250;
 
     // colors
     --white: white;
@@ -16,6 +21,7 @@
 @media (prefers-color-scheme: dark) {
     :root{
         --theme-bg : rgb(28, 28, 28);
+        --theme-container : rgb(46, 46, 46);
         --theme-color: rgb(225, 225, 225);
       }
   }

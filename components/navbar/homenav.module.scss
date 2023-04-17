@@ -1,0 +1,78 @@
+@import "../../styles/mixins";
+
+.navMain{
+    // height: $navHeight;   
+    padding: 0.5rem;
+    position: sticky;
+    top: 0%;
+    width: 100vw;
+    // background-color: rgb(223, 223, 223);
+    background-color: var(--theme-container);
+    box-shadow: 01x 1px 11px 0px var(--theme-shadow);
+    @include flexBox();
+    z-index: 10;
+}
+.nav{
+    width: $pageView;
+    @include flexBox();
+}
+.location{
+    @include flexBox(column , center , flex-start , 0rem);
+    width: fit-content;
+    text-transform: capitalize;
+    h1{
+        @include textWrap(1);
+        font-size: 1.5rem;
+        font-weight: 700;
+         line-height: 1.8rem;
+    }
+    p{
+        @include textWrap(1);
+        font-size: 0.8rem;
+    }
+}
+.searchbox{
+    position: relative;
+    margin: auto;
+    width: min(30rem , 100%);
+    @include flexBox();
+    input{
+        border: none;
+        outline: none;
+        padding:0.4rem;
+        padding-right: 2.5rem;
+        border-radius: 0.2rem;
+        width: 100%;
+        background-color: var(--theme-container);
+        border: 0.1rem solid var(--primary-color);
+        font-size: 0.9rem;
+        font-weight: 500;
+        &::placeholder{
+            opacity: 0.6;
+        }
+    }
+    svg{
+        padding: 0.2rem;
+        position: absolute;
+        width: 2.4rem;
+        height: 100%;
+        right: 0rem;
+    }
+}
+
+@media (max-width:$mobile) {
+    .nav{
+        flex-direction: column;
+    }
+    .location{
+        width: 100%;
+        text-align: left;
+        h1{
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        p{
+            font-size: 0.7rem;
+        }
+    }
+}
