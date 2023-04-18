@@ -3,6 +3,7 @@ import Homenav from '@/components/navbar/Homenav'
 import Crausal from '@/components/HomeItems/Crausal'
 import ServiceList from '@/components/HomeItems/ServiceList'
 import TrendingService from '@/components/HomeItems/TrendingService'
+import Recomendataion from '@/components/HomeItems/Recomendataion'
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
       <Crausal/>
       <ServiceList />
       <TrendingService/>
+      <Recomendataion />
       </section>
     </main>
   )

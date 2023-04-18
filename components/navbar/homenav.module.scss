@@ -2,15 +2,18 @@
 
 .navMain{
     // height: $navHeight;   
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     position: sticky;
     top: 0%;
     width: 100vw;
-    // background-color: rgb(223, 223, 223);
-    background-color: var(--theme-container);
-    box-shadow: 01x 1px 11px 0px var(--theme-shadow);
+    background-color: transparent;
+    background-color: var(--primary-color);
+    color: rgb(243, 243, 243);
+    backdrop-filter: blur(50px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.347);
     @include flexBox();
     z-index: 10;
+    border-radius: 0rem 0rem 2rem 2rem;
 }
 .nav{
     width: $pageView;
@@ -21,10 +24,9 @@
     width: fit-content;
     text-transform: capitalize;
     h1{
-        @include textWrap(1);
+        @include flexBox();
         font-size: 1.5rem;
         font-weight: 700;
-         line-height: 1.8rem;
     }
     p{
         @include textWrap(1);
@@ -32,19 +34,23 @@
     }
 }
 .searchbox{
+    padding: 0.2rem;
     position: relative;
     margin: auto;
     width: min(30rem , 100%);
     @include flexBox();
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0.3rem;
+    background-color: rgb(234, 234, 234);
+    color: black;
     input{
         border: none;
         outline: none;
-        padding:0.5rem;
+        padding:0.6rem;
         padding-right: 2.5rem;
         border-radius: 0.2rem;
         width: 100%;
-        background-color: var(--theme-container);
-        border: 0.1rem solid var(--primary-color);
+        background-color: rgba(0, 0, 0, 0.1);
         font-size: 0.9rem;
         font-weight: 500;
         &::placeholder{
@@ -52,11 +58,10 @@
         }
     }
     svg{
-        padding: 0.2rem;
-        position: absolute;
-        width: 2.4rem;
+        width: 2rem;
         height: 100%;
         right: 0rem;
+        color: var(--primary-color);
     }
 }
 

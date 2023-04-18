@@ -7,7 +7,7 @@ const Backnav = (props) => {
   let router = useRouter();
   return (
     <main className={style.navMain}>
-        <button onClick={()=>{router.back(-1)}}><ArrowBackIosIcon/> back</button>
+        <button onClick={()=>{router.back(-1)}}><ArrowBackIosIcon/></button>
         <h2>{props.page}</h2>
         <h1>jicro</h1>
     </main>

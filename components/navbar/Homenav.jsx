@@ -3,6 +3,7 @@ import style from "./homenav.module.scss"
 import SearchIcon from '@mui/icons-material/Search';
 import URL from "@/constants/URL"
 import { useRouter } from 'next/router';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 const Homenav = () => {
   let router = useRouter()
@@ -10,7 +11,7 @@ const Homenav = () => {
     <main className={style.navMain}>
         <nav className={style.nav}>
             <div className={style.location}>
-                <h1>madhya pardesh</h1>
+                <h1><LocationOnIcon/> madhya pardesh</h1>
                 <p>ayodhya byapass , bhopal</p>
             </div>
             <div className={style.searchbox} > 

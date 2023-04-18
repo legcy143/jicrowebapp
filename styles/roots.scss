@@ -17,11 +17,11 @@
     --white: white;
     --black : black;
 }
-// @media (prefers-color-scheme: light) {
-@media (prefers-color-scheme: dark) {
-    :root{
-        --theme-bg : rgb(28, 28, 28);
-        --theme-container : rgb(46, 46, 46);
-        --theme-color: rgb(225, 225, 225);
-      }
-  }
+// // @media (prefers-color-scheme: light) {
+// @media (prefers-color-scheme: dark) {
+//     :root{
+//         --theme-bg : rgb(28, 28, 28);
+//         --theme-container : rgb(46, 46, 46);
+//         --theme-color: rgb(225, 225, 225);
+//       }
+//   }

@@ -3,12 +3,14 @@
     padding: 0.5rem;
     border: none;
     outline: none;
-    border-radius: 0.1rem;
+    border-radius: 0.2rem;
     font-size: 1rem;
     font-family: inherit;
     width: 100%;
     transition: 0.30s ease;
     background-color: var(--theme-container);
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 0.1rem solid rgba(var(--primary-color-rgb) , 0.6);
     &::placeholder{
         transition: 0.30s ease;
         opacity: 0.6;

@@ -1,6 +1,6 @@
 const URL = {
     /**@USER ~ ROUTES */ 
-    USERHOME : "/user/demandservice",
+    USERHOME : "/user",
     DEMANDSERVICE : "/user/demandservice",
     USERSEARCH : "/user/search",
 

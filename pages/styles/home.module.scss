@@ -1,0 +1,73 @@
+@import "../../styles/mixins";
+
+.mainAuth{
+    @include dynamicHeight();
+    @include flexBox();
+    background-color: rgba(var(--primary-color-rgb) , 0.2);
+}
+
+.authContainer{
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.215);
+    background-color: white;
+    padding: 0.5rem;
+    width: min(30rem , 90%);
+    @include flexBox(column);
+    *{
+        width: 100%;
+    }
+}
+.header{
+    text-align: center;
+    h1{
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        color: rgba(var(--primary-color-rgb));
+    }
+    p{
+        font-weight: 500;
+        opacity: 0.8;
+        font-size: 0.9rem;
+    }
+}
+.linehr{
+    margin: 0.5rem 0rem;
+    width: 90%;
+    @include flexBox();
+    font-size: 0.8rem;
+    div{
+        width: 30%;
+        border: 0.09rem  solid black;
+        opacity: 0.2;
+    }
+}
+.costumerLoginBtn{
+    @include primaryButton();
+    width: 90%;
+    margin: 1rem 0rem;
+}
+.workerLoginBtn{
+    @include primaryButton();
+    color: black;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background-color: transparent;
+    opacity: 0.6;
+    &:hover{
+        opacity: 1;
+        background-color: transparent;
+
+    }
+}
+.terms{
+    @include flexBox(column , center , center , 0.1rem);
+    text-align: center;
+    span{
+        font-size: 0.9rem;
+    }
+    small{
+        font-size: 0.7rem;
+
+    }
+}

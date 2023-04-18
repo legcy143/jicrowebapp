@@ -54,8 +54,74 @@
         font-size: 0.8rem
     };
     small{
+        margin: 0.2rem 0rem;
         opacity: 0.7;
         display: block;
         font-size: 0.7rem
     };
+    button{
+        background: transparent;
+        border: none;
+        @include flexBox();
+        width: 100%;
+        // opacity: 0.6;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 0.4rem;
+        opacity: 0.7;
+        background-color: rgba(var(--primary-color-rgb) , 0.1);
+        svg{
+            width: 1rem;
+            height: 1rem;
+        }
+        &:hover{
+            opacity: 1;
+            background-color: rgba(var(--primary-color-rgb) , 0.2);
+        }
+    }
+}
+
+.recomandationCard{
+    flex: 0 0 17rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    background-color: rgba(134, 134, 134, 0.05);
+    box-shadow: 1px 1px 10px 0px rgba(var(--theme-shadow-rgb) , 0.4);
+    transition: 0.30s ease;
+    &:hover{
+        background-color: rgba(134, 134, 134, 0.2);
+        box-shadow: 3px 7px 10px 0px rgba(var(--theme-shadow-rgb) , 0.50);
+    }
+    img{
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 0.2rem;
+    }
+    h1{
+        font-size: 1rem;
+        font-weight: 600;
+        @include textWrap(2);
+    };
+    button{
+        @include primaryButton();
+        width: 100%
+    }
+
+}
+.infoContainer{
+    @include flexBox(row , flex-start);
+    margin: 0.4rem auto;
+    img{
+        width: 3rem;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+    }
+    p{
+        text-align: center;
+        flex: 1;
+        padding: 0.3rem;
+        border-radius: 0.2rem;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
 }

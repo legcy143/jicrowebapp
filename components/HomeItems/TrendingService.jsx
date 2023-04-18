@@ -2,6 +2,7 @@ import React from 'react'
 import style from "./service.module.scss"
 import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import WhatshotIcon from '@mui/icons-material/Whatshot';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const TrendingService = () => {
   return (
@@ -33,6 +34,7 @@ const Card = ()=>{
     <p>lorem ispum work is random text</p>
     <span>$ 255</span>
     <small>125 daily booking</small>
+    <button>view <ArrowForwardIcon/></button>
 </div>
     )
 }
