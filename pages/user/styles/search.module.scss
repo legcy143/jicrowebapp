@@ -1,37 +1,16 @@
-@import "../../styles/mixins";
+@import "../../../styles/mixins";
 
-.navMain{
-    // height: $navHeight;   
-    padding: 1rem 0.5rem;
+.searchNav{
+    padding:0.8rem 2rem;
     position: sticky;
     top: 0%;
     width: 100vw;
-    background-color: transparent;
+    @include flexBox(row , space-between);
+    z-index: 10;
     background-color: var(--primary-color);
     color: rgb(243, 243, 243);
-    backdrop-filter: blur(50px);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.347);
-    @include flexBox();
-    z-index: 10;
     border-radius: 0rem 0rem 2rem 2rem;
-}
-.nav{
-    width: $pageView;
-    @include flexBox();
-}
-.location{
-    @include flexBox(column , center , flex-start , 0rem);
-    width: fit-content;
-    text-transform: capitalize;
-    h1{
-        @include flexBox();
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
-    p{
-        @include textWrap(1);
-        font-size: 0.8rem;
-    }
 }
 .searchbox{
     padding: 0.2rem;
@@ -64,24 +43,23 @@
         color: var(--primary-color);
     }
 }
-
-@media (max-width:$mobile) {
-    
-.navMain{
-    padding: 1rem 0.5rem 1.5rem;
-}
-    .nav{
-        flex-direction: column;
-    }
-    .location{
-        width: 100%;
-        text-align: left;
-        h1{
-            font-size: 1.3rem;
-            font-weight: 700;
+.backbtn{
+        @include flexBox();
+        width: 2rem;
+        aspect-ratio: 1/1;
+        background-color: transparent;
+        border: none;
+        color: inherit;
+        svg{
+            padding: 0.1rem;
+            padding-left: 0.5rem;
+            border-radius: 50%;
+            transition: 0.30s ease;
+            @include flexBox();
+            width: 2rem;
+            height: 2rem;
+            &:hover{
+                background: rgba(86, 86, 86, 0.4);
+            }
         }
-        p{
-            font-size: 0.7rem;
-        }
-    }
 }
